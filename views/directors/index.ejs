@@ -1,0 +1,13 @@
+<div>
+    <h2>Search Director</h2>
+</div>
+<form>
+    <label>Name</label>
+    <input type="text" name="name" value="<%= searchOptions.name %>">
+    <a href="/directors">Cancel</a>
+    <button type="submit">Search</button>
+</form>
+
+<% directors.forEach(director => { %> 
+<div><%= director.name  %> </div>
+<% }) %> 
